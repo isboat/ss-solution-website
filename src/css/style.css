@@ -928,3 +928,11 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+.service-offers {
+  text-align: left;
+}
+
+.service-offers li, .detail-box ol li {
+  margin-bottom: 15px;;
+}
