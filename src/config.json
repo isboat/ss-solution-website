@@ -1,0 +1,19 @@
+{
+    "management-api": {
+        "base-endpoint": ""
+    },
+    "display-api": {
+        "base-endpoint": "http://mydisplay123point.runasp.net/api/",
+        "device-code-url": "device/code",
+        "device-info-url": "device/info",
+        "device-token-request-url": "device/token",
+        "device-refresh-token-request-url": "device/token",
+        "content-data-url": "content/data",
+        "signalr-negotiation-url": "signalr/negotiate",
+        "signalr-add-connection-url": "signalr/add-connection",
+        "signalr-remove-connection-url": "signalr/remove-connection",
+        "messages": {
+            "app-title": "OnScreenSync"
+        }
+    }
+}

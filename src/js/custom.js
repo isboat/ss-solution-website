@@ -33,14 +33,31 @@ $(".client_owl-carousel").owlCarousel({
         }
     }
 });
+cKey = "cookieaccepted";
 
-
-
-/** google_map js **/
-function myMap() {
-    var mapProp = {
-        center: new google.maps.LatLng(40.712775, -74.005973),
-        zoom: 18,
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+function hideCookie() {
+    $(".cookie-content").hide();
 }
+
+function acceptCookie() {
+    localStorage.setItem(cKey, "true")
+    hideCookie();
+}
+$(document).ready(function(){
+
+    /*
+    const cookieConsentVal = localStorage.getItem(cKey);
+    if(!cookieConsentVal) {
+        $(".cookie-content").load("cookie.html", function(){
+            $(".cookie-content").show();
+            $(".hideCookieBtn").click(function(){
+                hideCookie();
+            })
+    
+            
+            $(".acceptCookieBtn").click(function(){
+                acceptCookie();
+            })
+        });
+    }     */   
+});
