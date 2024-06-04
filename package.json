@@ -1,0 +1,9 @@
+{
+  "version": "2.8.0",
+  "license": "MIT",
+  "scripts": {
+
+    "swalogin": "swa login",
+    "deploy": "swa --verbose=silly deploy --env production --deployment-token <DEPLOYMENT-TOKEN> ./dist"
+  }
+}
