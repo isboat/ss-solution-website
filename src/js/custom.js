@@ -45,7 +45,7 @@ function acceptCookie() {
 }
 $(document).ready(function(){
 
-    /*
+    
     const cookieConsentVal = localStorage.getItem(cKey);
     if(!cookieConsentVal) {
         $(".cookie-content").load("cookie.html", function(){
@@ -59,5 +59,5 @@ $(document).ready(function(){
                 acceptCookie();
             })
         });
-    }     */   
+    }      
 });

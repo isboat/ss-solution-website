@@ -1,6 +1,6 @@
-<div>
-    <div class="cc-popup" id="popup2" *ngIf="showP">
-        <h2>We use cookies to give you the best online experience.</h2>
+<div id="cookie-container">
+    <div class="cookie-reveal-modal">
+        <h3>We use cookies to give you the best online experience.</h3>
 
         <p>
             Cookies are small text files which are transferred to your computer or mobile when you visit
@@ -12,7 +12,9 @@
             <li>These cookies are set by the website you are visiting. And only that website can read
                 them.</li>
         </ul>
-        <button type="button" class="btn btn-secondary hideCookieBtn" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary acceptCookieBtn" data-dismiss="modal">Accept</button>
+        <div>
+            <button type="button" class="btn btn-secondary hideCookieBtn" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary acceptCookieBtn" data-dismiss="modal">Accept</button>
+        </div>
     </div>
 </div>
