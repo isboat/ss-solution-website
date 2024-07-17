@@ -3,7 +3,7 @@
         "base-endpoint": ""
     },
     "display-api": {
-        "base-endpoint": "http://mydisplay123point.runasp.net/api/",
+        "base-endpoint": "https://onscreensync-displayapi.azurewebsites.net/api/",
         "device-code-url": "device/code",
         "device-info-url": "device/info",
         "device-token-request-url": "device/token",
