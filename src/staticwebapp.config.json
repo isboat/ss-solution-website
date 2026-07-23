@@ -10,7 +10,8 @@
   },
   "responseOverrides": {
     "404": {
-      "rewrite": "/index.html"
+      "rewrite": "/404.html",
+      "statusCode": 404
     }
   }
 }

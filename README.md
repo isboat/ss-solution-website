@@ -32,7 +32,7 @@ The workflow uploads `src/` as the Pages artifact, and `src/.nojekyll` disables 
    - Build preset: custom/static HTML, no app build
 4. Push to `main` or run the **Deploy to Azure Static Web Apps** workflow manually.
 
-Azure reads `src/staticwebapp.config.json` at deploy time for headers, trailing slash behavior, and 404 handling.
+Azure reads `src/staticwebapp.config.json` at deploy time for headers, trailing slash behavior, and 404 handling. GitHub Pages uses `src/404.html` for not-found responses, so both hosts now share an explicit 404 page instead of silently serving the home page for missing URLs.
 
 ## Local preview
 
