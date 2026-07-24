@@ -61,3 +61,25 @@ $(document).ready(function(){
         });
     }      
 });
+// Modern scroll reveal animations
+$(document).ready(function () {
+    var revealTargets = $(".service_section .box, .about_section .img-box, .about_section .detail-box, .why_section .box, .team_section .box, .client_section .box");
+    revealTargets.addClass("reveal-on-scroll");
+
+    if ("IntersectionObserver" in window) {
+        var revealObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("is-visible");
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.16 });
+
+        revealTargets.each(function () {
+            revealObserver.observe(this);
+        });
+    } else {
+        revealTargets.addClass("is-visible");
+    }
+});
