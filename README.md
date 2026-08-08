@@ -34,6 +34,8 @@ The workflow uploads `src/` as the Pages artifact, and `src/.nojekyll` disables 
 
 Azure reads `src/staticwebapp.config.json` at deploy time for headers, trailing slash behavior, and 404 handling. GitHub Pages uses `src/404.html` for not-found responses, so both hosts now share an explicit 404 page instead of silently serving the home page for missing URLs.
 
+The Azure configuration also adds permissive CORS response headers globally. This allows clients hosted on any origin to request static resources such as `/config.json` with any method or request headers. These headers apply to the Azure Static Web Apps deployment; GitHub Pages does not support configuring equivalent custom response headers.
+
 ## Local preview
 
 Use any static file server from the repository root, for example:
